@@ -7,7 +7,7 @@ Run maven commands from project root:
   mvn clean
   mvn install
 Place parts.war file from {project root}/target to Tomcat webapps folder and restart Tomcat
-Web app is available at http://127.0.0.1:8080/
+Web app is available at http://127.0.0.1:8080/parts
 
 
 Time spent: 8h
