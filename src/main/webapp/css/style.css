@@ -1,0 +1,79 @@
+table.datatable {
+    width: 100%;
+}
+
+thead, tbody {
+    display: block;
+    width: 100%;
+}
+
+.datatable thead th  {
+    width: 170px;
+}
+
+.datatable tbody td {
+    width: 170px;
+}
+
+.datatable tbody tr {
+    background-color: aquamarine;
+}
+
+.datatable thead tr {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.datatable tr {
+    width: 100%;
+}
+
+.datatable tbody {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.datatable thead {
+    width: 100%;
+}
+
+.mainLayout {
+    width: 1024px;
+    height: 100%;
+    background-color: beige;
+    display: block;
+    margin: 0 auto;
+}
+
+.clButton {
+    background-color: deepskyblue;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    margin: 5px auto;
+    width: 75px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow {
+    display: inline-block;
+}
+
+.filterHeader {
+    background-color: cornflowerblue;
+    width: 100%;
+}
+
+.pageClass {
+    font-family: Arial;
+    height: 100%;
+    display: block;
+}
+
+html {
+    height: 98%;
+}
