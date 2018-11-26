@@ -84,7 +84,7 @@ function printResponse(responseText) {
 
 //paging params string
 function addPagingParams() {
-    return ', "page":{"LIMIT":"' + pageSize + '", "OFFSET":"' + (reload ? 1 : (lastRowIndex + 2)) + '"}';
+    return ', "page":{"LIMIT":"' + pageSize + '", "OFFSET":"' + (reload ? 0 : (lastRowIndex + 1)) + '"}';
 }
 
 //filter function
@@ -101,7 +101,7 @@ function doFilter() {
         return;
     }
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/serve', false);
+    xhr.open('POST', './serve', false);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     var body = '{' + createFilterParams(pn, pName, vendor, qty, shippedFrom, shippedTo, receivedFrom, receivedTo)
         + ', "table":"part_entity"' + createSortParams() + addPagingParams() + '}';

@@ -1,5 +1,6 @@
 package com.company.parts.model;
 
+import org.apache.log4j.Logger;
 import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
@@ -31,6 +32,7 @@ public class DataProvider {
     private static final String password = "postgres";
     public static Pattern pattern = Pattern.compile("\\[.*\\]");
     private DateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy", Locale.ENGLISH);
+    static final Logger logger = Logger.getLogger(DataProvider.class);
 
     private String tableName;
     private Map<String, FieldMetadata> fields;
@@ -117,7 +119,7 @@ public class DataProvider {
                     try {
                         connection.close();
                     } catch (SQLException connectionCloseException) {
-                        return new JSONArray("[{\"error\":\"connectionCloseException\"}]");
+                        logger.error(connectionCloseException.getMessage());
                     }
                 }
             }

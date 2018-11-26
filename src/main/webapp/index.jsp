@@ -33,13 +33,13 @@
             <td></td>
         </tr>
         <tr>
-            <td>Shipped</td>
-            <td><input type="text" id="shippedFrom"><input type="text" id="shippedTo"></td>
+            <td>Shipped after</td>
+            <td><input type="text" id="shippedFrom"> before <input type="text" id="shippedTo"></td>
             <td></td>
         </tr>
         <tr>
-            <td>Received</td>
-            <td><input type="text" id="receivedFrom"><input type="text" id="receivedTo"></td>
+            <td>Received after</td>
+            <td><input type="text" id="receivedFrom"> before <input type="text" id="receivedTo"></td>
             <td></td>
         </tr>
     </table>
